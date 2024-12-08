@@ -44,7 +44,7 @@
   .hero {
     text-align: center;
     padding: 80px 20px;
-    background: url("pic/p5.jpg") no-repeat center center/cover;
+    background: url("p5.jpg") no-repeat center center/cover;
     color: black;
     height: 100vh;
     display: flex;
