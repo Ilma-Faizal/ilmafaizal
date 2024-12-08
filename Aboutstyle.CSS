@@ -1,0 +1,61 @@
+ /* ABOUT PAGE*/  
+
+
+
+ body
+{
+background-color:#6c7f8c;;
+background-image: url("pic/BG1.jpg");
+background-size: cover;
+}
+    
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 18rem;
+    padding: 40px 47px;
+    box-shadow: 10px 10px 18px -8px #aaaaaa,-10px -10px 24px #ffff;
+    height: 600px;
+    width:auto;
+   border-radius: 20px;
+  
+}
+.container img
+{
+    height: 100%;
+    width:300px;
+    border-radius: 20px;
+}
+.About-Details
+{
+    margin: 0 45px;
+justify-content: baseline;
+
+}
+.About-Details span 
+{
+    color:rgb(94, 62, 24);
+    font-size: 1.8rem;
+    
+
+}
+.About-Details h2
+{
+    font-family: "potaa one";
+    font-weight: 100;
+    font-size: 26px;
+    letter-spacing: 1 px;
+    margin-bottom: 20px;
+    color:black;
+
+}
+.About-Details p 
+{
+    color: black;
+    font-size: 18px;
+
+}
+
+

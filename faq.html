@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Creations - Resin FAQ</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient to bottom, #d6dce0, #2a3a44;
+            color:#2daf79;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #6c7f8c;
+            color: rgb(214, 224, 233);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar .nav-links li {
+            display: inline;
+        }
+
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #D4AF37; /* Gold hover effect */
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 40px auto;
+            background: linear-gradient(to right, #2d4655, #3e5b77);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .faq-header h2 {
+            font-size: 2.5em;
+            color: #030303;
+            margin-bottom: 10px;
+        }
+
+        .faq-header p {
+            font-size: 1.2em;
+            color: #deebdd;
+        }
+
+        .faq-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* FAQ Item */
+        .faq-item {
+            background: linear-gradient(to bottom, #07262e, #083141); /* Gray with teal */
+            border-radius: 10px;
+            padding: 20px;
+            color: white;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .faq-item h3 {
+            margin: 0;
+            font-size: 1.2em;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-item .faq-answer {
+            margin-top: 10px;
+            display: none;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .faq-item.active h3 {
+            color: #284252; /* Gold color for active */
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .faq-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <script>
+        // JavaScript for FAQ Toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const faqItems = document.querySelectorAll('.faq-item h3');
+
+            faqItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const parent = item.parentElement;
+                    parent.classList.toggle('active');
+ });
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Crystal Creations</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+           
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="faq-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Your queries about resin products answered.</p>
+        </div>
+        <div class="faq-container">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+                <h3>What types of resin products do you offer? <span>+</span></h3>
+                <div class="faq-answer">
+                    <p>We offer Art pieces, Home Decor, Custom Creations and  jewelry items.</p>
+                </div>
+            </div>
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+                <h3>Do you offer discount for bulk or multiple orders? <span>+</span></h3>
+                <div class="faq-answer">
+                    <p>Yes, we provide discounts for large orders.contact us for a custom quote.</p>
+                </div>
+            </div>
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+                <h3>How much does it cost? <span>+</span></h3>
+                <div class="faq-answer">
+                    <p>The cost varies depending on the product and design complexity. Contact us for a personalized quote.</p>
+                </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+            <div class="faq-item">
+                <h3>what is your return policy for custom design?<span>+</span></h3>
+                <div class="faq-answer">
+                    <p>we do not accept returns on custom designs,but we will work with you to resolve any issues .</p>
+                </div>
+            </div>
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+                <h3>How long does delivery take? <span>+</span></h3>
+                <div class="faq-answer">
+                    <p>Standard products take 5-7 business days to deliver. Custom orders may require additional time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

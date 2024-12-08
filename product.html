@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now</title>
+   
+    <link rel="stylesheet" href="productstyle.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    
+       
+  
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Shop Resin Creations</h1>
+        <p>Explore unique, handcrafted resin art and decor items.</p>
+    </header>
+
+    <!-- Dropdown for Categories -->
+    <div class="category-select">
+        <select id="categoryDropdown" onchange="filterCategory()">
+            <option value="all">All Items</option>
+            <option value="art">Art Pieces</option>
+            <option value="home">Home Decor</option>
+            <option value="jewelry">Jewelry</option>
+            <option value="custom">Custom Creations</option>
+        </select>
+    </div>
+
+    <!-- Category Description -->
+    <div class="category-description" id="categoryDescription">
+        Browse all our handcrafted resin creations, from art pieces to personalized gifts.
+    </div>
+
+    <!-- Product Grid -->
+    <div class="products-container" id="productContainer">
+
+        <!-- Art Pieces -->
+        <div class="product-card art">
+            <img src="pic/a1.jpg" alt="Abstract Resin Art">
+            <h3>Abstract Crystal Half Round </h3>
+            <p>Abstract Gold Blue Silver Waves</p>
+            <p class="price">Rs 15,000/=</p>
+            <p class="size">Size:height 12"&10"</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSezLG7J6vkURS7kNT-VnA_3QBCzVCC-VAcDV606haH-XpXsog/viewform?embedded=true"  class="shop-button-link">
+            <button class="shop-button">Shop Now</button></a>
+        </div>
+        <div class="product-card art">
+          <img src="pic/a2.jpg" alt="Abstract Resin Art">
+          <h3>Abstract Resin Art</h3>
+          <p> Gold & Blue  Fish in The Half Round</p>
+          <p class="price">Rs 13,000/=</p>
+          <p class="size">Size:Height 12"&10"</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSezLG7J6vkURS7kNT-VnA_3QBCzVCC-VAcDV606haH-XpXsog/viewform?embedded=true"  class="shop-button-link">
+            <button class="shop-button">Shop Now</button></a>
+       </div>
+       <div class="product-card art">
+        <img src="pic/a4.jpg" alt="Abstract Resin Art">
+        <h3>3 Panel Abstract Resin Art</h3>
+        <p> Gold Fish in The Blue Ocean</p>
+        <p class="price">Rs 18,000/=</p>
+        <p class="size">Size:Height 12" width 10"</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSezLG7J6vkURS7kNT-VnA_3QBCzVCC-VAcDV606haH-XpXsog/viewform?embedded=true"  class="shop-button-link">
+            <button class="shop-button">Shop Now</button></a>
+      
+       </div>
+     
+      <div class="product-card art">
+        <img src="pic/w2.jpg" alt="Abstract Resin Art">
+        <h3>Resin Wall Art</h3>
+        <p>Resin Wall Art With laser cut metal Arabic letters</p>
+        <p class="price">Rs 12,000/=</p>
+        <p class="size">Size:Height 12"</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSezLG7J6vkURS7kNT-VnA_3QBCzVCC-VAcDV606haH-XpXsog/viewform?embedded=true"  class="shop-button-link">
+            <button class="shop-button">Shop Now</button></a>
+     </div>
+     
+
+
+        <!-- Home Decor -->
+        <div class="product-card home">
+            <img src="pic/b1.jpg" alt="coasters">
+            <h3>Coasters</h3>
+            <p></p>
+            <p class="price">Rs 4,000/=</p>
+            <p class="size">Size:2.56"</p>
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card home">
+            <img src="pic/b2.jpg" alt="cos">
+            <h3>Coasters</h3>
+            <p>Ayat ul Kursi Coasters</p>
+            <p class="price">Rs 2500/=</p>
+            <p class="size">Size:small</p>
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card home">
+            <img src="pic/b3.jpg" alt="Resin Clock">
+            <h3>Coasters</h3>
+            <p>Bubble Coasters</p>
+            <p class="price">Rs 1200/=</p>
+            <p class="size">Size:3"</p>
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card home">
+            <img src="pic/c1.jpg" alt="Resin Clock">
+            <h3>Resin Clock</h3>
+            <p>White And Gray clock</p>
+            <p class="price">Rs 6,000/=</p>
+            <p class="size">Size:10"</p>
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card home">
+            <img src="pic/c2.jpg" alt="Resin Clock">
+            <h3>Resin Clock</h3>
+            <p>Gold clock</p>
+            <p class="price">Rs 6,000/=</p>
+            <p class="size">Size:10"</p>
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card home">
+            <img src="pic/c4.jpg" alt="Resin Clock">
+            <h3>Resin Clock</h3>
+            <p>White And Red clock</p>
+            <p class="price">Rs 6,000/=</p>
+            <p class="size">Size:10"</p>
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card home">
+            <img src="pic/c5.jpg" alt="Resin Clock">
+            <h3>Resin Clock</h3>
+            <p>White And Black clock</p>
+            <p class="price">Rs 6,000/=</p>
+            <p class="size">Size:10"</p>
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card home">
+            <img src="pic/t2.jpg" alt="Resin tray">
+            <h3>Resin Tray</h3>
+            <p>Oval Tray</p>
+            <p class="price">Rs 1800/=</p>
+            <p class="size">Size:small</p>
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card home">
+            <img src="pic/t3.jpg" alt="Resin Clock">
+            <h3>Resin Tray</h3>
+            
+            <p class="price">Rs 1800/=</p>
+            <p class="size">Size:small</p>
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card home">
+            <img src="pic/t4.jpg" alt="Resin Clock">
+            <h3>Resin Tray</h3>
+            <p>White and Gold</p>
+            <p class="price">Rs 1800/=</p>
+            <p class="size">Size:small</p>
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card home">
+            <img src="pic/t5.jpg" alt="Resin Clock">
+            <h3>Resin Tray</h3>
+            <p>Feather Tray</p>
+            <p class="price">Rs 2000/=</p>
+            <p class="size">Size:small</p>
+            <button class="shop-button">Shop Now</button>
+        </div>
+       
+       
+       
+
+        <!-- Jewelry -->
+        <div class="product-card jewelry">
+            <img src="pic/d1.jpg" alt="Resin rings">
+            <h3>Resin Rings</h3>
+            <p>Trendy Dried Flower Rings.</p>
+            <p class="price">Rs 250/=</p>
+            <p class="size">Size:All size</p>
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card jewelry">
+            <img src="pic/d2.jpg" alt="Resin rings">
+            <h3>Resin Rings</h3>
+            <p>Queen Anne's Lace Flower Rings.</p>
+            <p class="price">Rs 450/=</p>
+            <p class="size">Size:All size</p>
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card jewelry">
+            <img src="pic/d3.jpg" alt="Resin rings">
+            <h3>Resin Rings</h3>
+            <p>Nature Resin Rings.</p>
+            <p class="price">Rs 300/=</p>
+            <p class="size">Size:All size</p>
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card jewelry">
+            <img src="pic/d4.jpg" alt="Resin rings">
+            <h3>Resin Rings</h3>
+            <p class="price">Rs 550/=</p>
+            <p class="size">Size:All size</p>
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card jewelry">
+            <img src="pic/n1.jpg" alt="Resin Nec">
+            <h3>Resin Neclace</h3>
+            <p>Real Flower Neclace.</p>
+            <p class="price">Rs 800/=</p>
+            
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card jewelry">
+            <img src="pic/n2.jpg" alt="Resin Nec">
+            <h3>Resin Neclace</h3>
+            <p>Pinl Ozothamnus Flower Neclace</p>
+            <p class="price">Rs 950/=</p>
+            
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card jewelry">
+            <img src="pic/n3.jpg" alt="Resin Nec">
+            <h3>Resin Neclace</h3>
+            <p>Real Rose Petals Heart Neclace.</p>
+            <p class="price">Rs 800/=</p>
+            
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card jewelry">
+            <img src="pic/n4.jpg" alt="Resin Nec">
+            <h3>Resin Neclace</h3>
+            <p>Dried Flower Neclace</p>
+            <p class="price">Rs 950/=</p>
+            
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card jewelry">
+            <img src="pic/e1.jpg" alt="Resin earring">
+            <h3>Earring</h3>
+            <p>Floral Earring</p>
+            <p class="price">Rs 350/=</p>
+            
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card jewelry">
+            <img src="pic/e2.jpg" alt="Resin earring">
+            <h3>Earring</h3>
+            <p>Gold Earring</p>
+            <p class="price">Rs 350/=</p>
+            
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card jewelry">
+            <img src="pic/e3.jpg" alt="Resin earring">
+            <h3>Earring</h3>
+            <p>Dried Flower Earring</p>
+            <p class="price">Rs 450/=</p>
+            
+            <button class="shop-button">Shop Now</button>
+        </div>
+
+
+        <!-- Custom Creations -->
+        <div class="product-card custom">
+            <img src="pic/z1.jpg" alt="Custom Resin Tray">
+            <h3>Custom Resin</h3>
+            <p>Personalized resin Items for unique gifts.</p>
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card custom">
+            <img src="pic/z2.jpg" alt="Custom Resin Tray">
+            <h3>Custom Resin </h3>
+            <p>Personalized resin Items for unique gifts.</p>
+          
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card custom">
+            <img src="pic/z3.jpg" alt="Custom Resin Tray">
+            <h3>Custom Resin </h3>
+            <p>Personalized resin Items for unique gifts.</p>
+            
+            
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card custom">
+            <img src="pic/z4.jpg" alt="Custom Resin Tray">
+            <h3>Custom Resin </h3>
+            <p>Personalized resin Items for unique gifts.</p>
+           
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card custom">
+            <img src="pic/z5.jpg" alt="Custom Resin Tray">
+            <h3>Custom Resin </h3>
+            <p>Personalized resin Items for unique gifts.</p>
+           
+            <button class="shop-button">Shop Now</button>
+        </div>
+        <div class="product-card custom">
+            <img src="pic/z6.jpg" alt="Custom Resin Tray">
+            <h3>Custom Resin </h3>
+            <p>Personalized resin Items for unique gifts.</p>
+           
+            
+            <button class="shop-button">Shop Now</button>
+        </div>
+
+    </div>
+
+    <footer style="background-color:  #2f4452; color: #ffffff; padding: 20px 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <!-- Logo and Name -->
+            <div style="text-align: center; margin-bottom: 10px;">
+                <img src="pic/logo1.jpg" alt="Resin Art Logo" style="width: 50px; height: 50px; border-radius: 50%; margin-bottom: 5px;">
+                <p style="margin: 0; font-weight: bold;">CRYSTAL CREATION</p>
+            </div>
+    
+            <!-- Quick Links -->
+            <div style="text-align: center; margin-bottom: 10px;">
+                <h4 style="margin-bottom: 5px;">Quick Links</h4>
+                <a href="home.html" style="color: #ffffff; text-decoration: none; margin-right: 10px;">Home</a>
+                <a href="AboutUs.html" style="color: #ffffff; text-decoration: none; margin-right: 10px;">About</a>
+                <a href="product.html" style="color: #ffffff; text-decoration: none; margin-right: 10px;">Shop</a>
+                <a href="contact.html" style="color: #ffffff; text-decoration: none; margin-right: 10px;">Contact</a>
+                <a href="faq.html" style="color: #ffffff; text-decoration: none; margin-right: 10px;">FAQ</a>
+            </div>
+    
+            <!-- Working Hours -->
+            <div style="text-align: center; margin-bottom: 10px;">
+                <h4 style="margin-bottom: 5px;">Working Hours</h4>
+                <p style="margin: 0;">Mon-Fri: 9:00 AM - 6:00 PM</p>
+                <p style="margin: 0;">Sat: 10:00 AM - 4:00 PM</p>
+                <p style="margin: 0;">Sun: Closed</p>
+            </div>
+    
+            <!-- Contact Info -->
+            <div style="text-align: center; font-size: 14px; margin-bottom: 10px;">
+                <h4 style="text-align: center; margin-bottom: 5px;">Contact Us</h4>
+                <p style="margin: 5px 0;">36/4 Kandy road,kandy</p>
+                <p style="margin: 5px 0;">Phone: 077-1234567</p>
+                <p style="margin: 5px 0;">Email: <a href="mailto:info@yourresinbrand.com" style="color: #ffffff; text-decoration: none;">info@yourresinbrand.com</a></p>
+            </div>
+    
+            <!-- Social Media Links -->
+            <div style="text-align: center;">
+                <h4 style="text-align: center; margin-bottom: 5px;">Follow Us</h4>
+                <a href="#" style="color: #ffffff; font-size: 16px; margin: 0 8px;"><i class="fab fa-facebook"></i></a>
+                <a href="#" style="color: #ffffff; font-size: 16px; margin: 0 8px;"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="color: #ffffff; font-size: 16px; margin: 0 8px;"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+        <hr style="border: 1px solid #ffffff; max-width: 90%; margin: 10px auto;">
+        <!-- Copyright Section -->
+        <div style="text-align: center; margin-top: 10px; font-size: 12px;">
+            &copy; 2024 Crystal Creation. All Rights Reserved.
+        </div>
+    </footer>
+    
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
